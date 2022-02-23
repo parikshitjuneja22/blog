@@ -28,7 +28,7 @@ const postSchema = {
   body: String
 };
 const Post = mongoose.model("Post", postSchema);
-
+// 
 app.get("/", (req, res) => {
   Post.find({}, function(err, posts){
     res.render("home", {
